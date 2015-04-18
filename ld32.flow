@@ -1,0 +1,27 @@
+{
+
+  project : {
+    name : 'LD32',
+    version : '0.1.0',
+    author : 'doomsday.no',
+
+    app : {
+      name : 'luxe_empty',
+      package : 'org.snowkit.empty',
+      output : 'bin/',
+      main : 'game.LDGame'
+    },
+
+    build : {
+      flags : [],
+      defines : [],
+      dependencies : {
+          luxe : "*"
+      }
+    },
+
+    files : {}
+
+  }
+
+}
