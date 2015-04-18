@@ -6,8 +6,8 @@
     author : 'doomsday.no',
 
     app : {
-      name : 'luxe_empty',
-      package : 'org.snowkit.empty',
+      name : 'WELCOME_TO_THE_GRINDER',
+      package : 'no.doomsday.grinder',
       output : 'bin/',
       main : 'game.LDGame'
     },
