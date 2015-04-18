@@ -29,3 +29,19 @@ But the mental gymnastics involved in becoming such a self-centred prick are tou
 Alcohol helps. Weed, too. Stronger stuff like prescribed medication sure does as well. Obviously because it’s mentally retarding business. By softening your perceptions of the world and softening your response mechanisms, the basic fight or flight does not kick in as hard, your “fuck those guys” instinct slows from a boil to a gentle simmer: The weird non-descript *danger* other people represent becomes practically nonexistent once you’ve crossed a certain threshold of influence. You just are; The “fuck you” shows up at appropriate moments. Genuine pricks become your enemies rather than the general populace.
 
 Is this something I could exploit? The idea that some powerups can reduce your susceptibility to the bullshit? That maybe you can “x-ray” through the blobby crowd of terror and pick out individual entities that cause genuine fright? Seems weirdly preachy about medication though; I went into-and-out-of beta blockers and SSRIs and I left it because it really wasn’t a positive experience overall. If medication gives you a power it needs to give you a disability as well…
+
+# LD32 - “It’s like PacMan only with randomness, chemicals and self-loathing”
+
+I think in the time I’ve available I need to combine interests. I know I want streets and junctions and the feeling of trying to get from point A to point B without bungling into a crowd and coming out of it feeling like garbage. I know I want it to be goal oriented: I’ve no reason to leave the house unless I’ve a reason to leave the house, after all.
+
+I think it might be cool in this case to lift liberally from PacMan in some respects: I’m not talking about moving around a maze collecting junk while hiding from ghosts, but rather starting at a point in a “city” of streets an being given a navigation problem with optional stops along the way to make the navigation “simpler” somehow. 
+
+It’s important to convey, I think, the feeling that “the others” aren’t actually malevolent. The danger isn’t what they do, it’s how they reflect on you. Moving into a crowd is “painful” not because the crowd wants to inflict pain on you but because you “find crowds painful”. If anything the congregation of crowds should be explained in a way that would make you want to take part. 
+
+What’s the lose condition? The win condition is simply to have “survived it” without humiliation. Maybe it’s score attack then: Make it through the maze from A to B. You start at 0 points. Every negative encounter subtracts. You want the least shitty score. There’s no lose condition. There’s just feeling like a loser.
+
+I’m thinking about how the crowd mechanic might work. I know I want to use flocking and steering behaviours as a basic behaviour set. The idea is that people attach to one another, rest by attaching to the world, then reattach to others, steering away from walls unless wanting to rest. I’m thinking I could create two clockwise or ccw vector maps underlying the world, one in a vortex “inwards” and the other in a vortex “outwards” and have distances from the centre trigger switches between which maps an entity belong to. Each junction point on the map would hold a “junction” area where entities could look to the vector map for influence as to which direction to take. When close to the centre vector influence would be “outwards” and vice versa.
+
+The trick is to give “enough” direction yet not enough to create actual uniformity. 
+
+First steps first, create a map. I’ll use hand-crafted arrays for starters.
