@@ -16,7 +16,8 @@
       flags : [],
       defines : [],
       dependencies : {
-          luxe : "*"
+          luxe : "*",
+          rnssync: "*"
       }
     },
 
